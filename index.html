@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assessment 2 - Avatar creator</title>
+    <link rel="stylesheet" type="text/css" href="controls.css">
+	<link rel="stylesheet" type="text/css" href="preview.css">
+  </head>
+  
+  <body>
+    <div id="preview">
+      <img id="hair" class="items" src="img/hair1.png" />
+      <img id="eyes" class="items" src="img/eyes1.png" />
+      <img id="nose" class="items" src="img/nose1.png" />
+      <img id="mouth" class="items" src="img/mouth1.png" />
+    </div>
+	<div id ="controls">
+		<div>
+			<input type="range" min="0" max="70" value="60"  id="slider1" class= sliders>
+			<input type="range" min="0" max="40" value="20"  id="slider2" class= sliders>
+			<input type="range" min="0" max="30" value="20"  id="slider3" class= sliders>
+			<input type="range" min="0" max="35" value="20"  id="slider4" class= sliders>
+			<input type="color" id="mycolor">
+	</div>
+			 <br>
+			<button id="myrange" onclick="changeType('range')">Range</button>
+			<button id="mynumber" onclick="changeType('number')" >Number</button>
+			<button id="random" onclick="randomface()">Random</button>
+			<button id="add" onclick="createface()">+</button>
+			<button id="autorandom" onclick="autorandom()">Auto Random Create</button>
+			<button id="stopauto" onclick="stoprandom()">Stop Auto Create</button>
+		</div>
+	<div id="display"></div>
+<script type="text/javascript" src="preview.js"></script>
+<script type="text/javascript" src="controls.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
