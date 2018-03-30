@@ -193,18 +193,21 @@ function randomface(){
 	preview.style.backgroundColor = "rgb("+rdred+","+rdgreen+","+rdblue+")"
 }
 
+var timer = null;
 
-
+function rdcreate(){
+randomface();
+createface();	
+}
 function autorandom(){
-	setInterval(randomface, 500);
-	setInterval(createface, 500);
+
+timer = setInterval(rdcreate, 500);
 }
 
-var stopface = setInterval(randomface, 500);
-var stopbg = setInterval(createface, 500);
-function stoprandom(){
-	clearInterval(stopface);
-	clearInterval(stopbg);
+
+function stoprandom(){	
+	clearInterval(timer);
+	
 }
 
 
