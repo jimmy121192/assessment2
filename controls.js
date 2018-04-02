@@ -121,7 +121,7 @@ mouth.addEventListener("click", function(){
 
 
 
-var selectdiv = null; //BONUS
+
 
 var x = 0;
 function createface(){
@@ -164,7 +164,6 @@ function createface(){
 
 	//BONUS
 	newdiv.addEventListener("click", function(){
-	electdiv = newdiv;
 	newdiv.style.display = "none";
 	})
 
